@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timer</title>
+  <link rel="stylesheet" href="main.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Qwitcher+Grypen&display=swap" rel="stylesheet" />
+
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="main_body">
+      <div>
+        <h1>Mr.Number One's <br> Alarm</h1>
+      </div>
+      <div class="timer">
+        <input type="text" id="hours" readonly value="0" />
+        <span>:</span>
+        <input type="text" id="minutes" readonly value="0" />
+        <span>:</span>
+        <input type="text" id="seconds" readonly value="0" />
+        <span style="font-size:larger" id="PmAm">PM</span>
+      </div>
+      <br><br>
+      <div class="controls">
+        <input type="time" id="alarmtime">
+        <button class="btn" id="setalarm" onclick="setAlarm()">Set</button>
+        <audio src="Alarm.wav" id="audio" loop></audio>
+      </div>
+    </div>
+
+    <div class="main_body" style="width:450px">
+      <h1>Alarms</h1>
+      <div id="alarms">
+        <br>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
